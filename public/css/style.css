@@ -1,0 +1,102 @@
+/* ======== Estilo geral ======== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Alinha tudo no centro */
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px; /* Tamanho máximo da tela */
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro */
+    gap: 20px; /* Espaçamento autom. entre itens */
+}
+
+/* ======== Títulos ======== */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* ======== Botões ======== */
+.btn, .btn-edit, .btn-delete {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn { background: #007bff; color: white; }
+.btn-edit { background:  #007bff; color: white;}
+.btn-delete { background: #f45464; color: white; }
+
+.btn:hover,
+.btn-edit:hover,
+.btn-delete:hover {
+    opacity: 0.85;
+    transform: scale(1.03); /* efeito bonito */
+}
+
+/* ======== Centralizar botão NOVO PRODUTO ======== */
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ======== Tabela ======== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ======== Proporção das colunas ======== */
+th:nth-child(1), td:nth-child(1) { width: 30%; } /* Nome */
+th:nth-child(2), td:nth-child(2) { width: 20%; } /* Preço */
+th:nth-child(3), td:nth-child(3) { width: 20%; } /* Quantidade */
+th:nth-child(4), td:nth-child(4) { width: 30%; } /* Ações */
+
+tr:hover { background: #f9f9f9; }
+
+
+/* ======== Formulários ======== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    padding: 8px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
