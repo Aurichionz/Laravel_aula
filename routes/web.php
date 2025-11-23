@@ -11,3 +11,11 @@ Route::get('/', function () {
 });
 
 Route::resource('produtos', ProdutoController::class);
+
+use App\Http\Controllers\CursoController;
+
+Route::resource('cursos', CursoController::class);
+
+use App\Http\Controllers\DisciplinaController;
+
+Route::resource('disciplinas', DisciplinaController::class);
